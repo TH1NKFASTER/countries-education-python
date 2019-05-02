@@ -73,7 +73,7 @@ class University(Model):
                 x.append(uni.rank_2018)
                 x.append(uni.university_name)
                 x.append(uni.country_name)
-                x.append(uni.alumni_emplyment_rank)
+                x.append(uni.alumni_employment_rank)
                 y.append(x)
         elif direction == 'DESC':
             for uni in University.select().order_by(-getattr(University, characteristic)):
@@ -82,6 +82,6 @@ class University(Model):
                 x.append(uni.rank_2018)
                 x.append(uni.university_name)
                 x.append(uni.country_name)
-                x.append(uni.alumni_emplyment_rank)
+                x.append(uni.alumni_employment_rank)
                 y.append(x)
         return y
