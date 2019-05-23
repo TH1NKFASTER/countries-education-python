@@ -1,0 +1,6 @@
+database = 'postgres'
+user = 'postgres'
+password = '1077'
+host = 'localhost'
+port = '50000'
+address = '127.0.0.1'
