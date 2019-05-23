@@ -86,7 +86,7 @@ def add_imo_participant(year, country, firstname, lastname, rank, award):
     year = int(year)
     rank = int(rank)
     requests.post(
-        'http:/{}:{}/add_imo_participant?year={}&country={}&firstname={}&lastname={}&rank={}&award={}'.format(address, port, year, country, firstname, lastname, rank, award))
+        'http://{}:{}/add_imo_participant?year={}&country={}&firstname={}&lastname={}&rank={}&award={}'.format(address, port, year, country, firstname, lastname, rank, award))
     return flask.redirect('http:/{}:{}/imo_participants'.format(address, port))
 
 
